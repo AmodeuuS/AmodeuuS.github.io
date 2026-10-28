@@ -450,23 +450,6 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/queue-mouthwashing.jpg",
                         "posterSource":  "https://store.steampowered.com/app/2475490/Mouthwashing/",
                         "sourceOrder":  306,
-                        "queueOrder":  2,
-                        "date":  "",
-                        "watched":  ""
-                    },
-                    {
-                        "id":  "queue-legion",
-                        "title":  "Легион",
-                        "type":  "series",
-                        "year":  2017,
-                        "status":  "queue",
-                        "score":  null,
-                        "ratingText":  "",
-                        "opinion":  "",
-                        "requester":  "krichatel",
-                        "poster":  "assets/covers/queue-legion.jpg",
-                        "posterSource":  "https://www.fxnetworks.com/shows/legion",
-                        "sourceOrder":  102,
                         "queueOrder":  1,
                         "date":  "",
                         "watched":  ""
@@ -484,7 +467,7 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/queue-gurren.jpg",
                         "posterSource":  "https://shikimori.one/animes/z2001-tengen-toppa-gurren-lagann",
                         "sourceOrder":  225,
-                        "queueOrder":  3,
+                        "queueOrder":  2,
                         "date":  "",
                         "watched":  ""
                     },
@@ -501,7 +484,7 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/queue-slime.jpg",
                         "posterSource":  "https://natalie.mu/comic/gallery/news/502607/1946634",
                         "sourceOrder":  227,
-                        "queueOrder":  4,
+                        "queueOrder":  3,
                         "date":  "",
                         "watched":  ""
                     },
@@ -518,7 +501,7 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/queue-atomic-heart.jpg",
                         "posterSource":  "https://store.steampowered.com/app/668580/Atomic_Heart/",
                         "sourceOrder":  1005,
-                        "queueOrder":  5,
+                        "queueOrder":  4,
                         "date":  ""
                     },
                     {
@@ -1107,7 +1090,7 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/entry-1792076834576.jpg",
                         "opinion":  "",
                         "sourceOrder":  1008,
-                        "queueOrder":  6,
+                        "queueOrder":  5,
                         "date":  ""
                     },
                     {
@@ -1137,7 +1120,7 @@ window.AMODEUUS_CONFIG = {
                         "poster":  "assets/covers/entry-1792174990485.jpg",
                         "opinion":  "",
                         "sourceOrder":  1010,
-                        "queueOrder":  7,
+                        "queueOrder":  6,
                         "date":  ""
                     },
                     {
