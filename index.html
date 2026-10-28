@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#050507" />
+  <meta name="description" content="AmodeuuS — стримы, архив просмотренного и пройденного, очередь заказов, музыка и донатеры." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>AmodeuuS // signal archive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="public-build">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="topbar shell">
+    <a class="brand glitch" href="#top" data-text="AMODEUUS">AMODEUUS</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#links">СВЯЗЬ</a>
+      <a href="#archive">АРХИВ</a>
+      <a href="#orders">ЗАКАЗЫ</a>
+      <a href="#donors">ДОНАТЕРЫ</a>
+    </nav>
+    <button class="icon-btn" id="editToggle" type="button" aria-pressed="false" title="Режим редактирования">EDIT</button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SIGNAL ONLINE // TWITCH NODE</div>
+        <h1 class="hero-title">AMODEUUS<br><span>PERSONAL ARCHIVE</span></h1>
+        <p class="hero-text">Стримы, музыка, просмотренное, пройденное и субъективные оценки, которые никто не просил.</p>
+        <div class="hero-actions">
+          <a class="btn primary" id="twitchLink" href="#" target="_blank" rel="noopener noreferrer">TWITCH ↗</a>
+          <a class="btn" href="#archive">ОТКРЫТЬ АРХИВ ↓</a>
+        </div>
+        <div class="signal-row" aria-label="Статус канала">
+          <span>CRT_FEED: STABLE</span><span>GLITCH: 07%</span><span>MOOD: QUESTIONABLE</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-halo"></div>
+        <img src="assets/hero-kurisu-transparent.png" alt="" />
+      </div>
+    </section>
+
+    <section id="links" class="section shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">// EXTERNAL SIGNALS</p>
+          <h2>ГДЕ МЕНЯ НАЙТИ</h2>
+        </div>
+        <p class="section-note">TWITCH // TELEGRAM // SPOTIFY</p>
+      </div>
+      <div class="links-grid">
+        <a class="link-card spotify" id="spotifyLink" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="link-index">01</span><span class="link-icon brand-icon"><img src="assets/icons/spotify.svg" alt="" aria-hidden="true"></span>
+          <div><b>SPOTIFY PLAYLIST</b><small>что играет у меня в голове и на стриме</small></div><span class="arrow">↗</span>
+        </a>
+        <a class="link-card telegram" id="telegramLink" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="link-index">02</span><span class="link-icon brand-icon"><img src="assets/icons/telegram.svg" alt="" aria-hidden="true"></span>
+          <div><b>TELEGRAM</b><small>анонсы, мысли, постстримовый шум</small></div><span class="arrow">↗</span>
+        </a>
+        <a class="link-card twitch" id="twitchLink2" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="link-index">03</span><span class="link-icon brand-icon"><img src="assets/icons/twitch.svg" alt="" aria-hidden="true"></span>
+          <div><b>TWITCH</b><small>основной эфир / живая версия этого безобразия</small></div><span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="archive" class="section shell archive-section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">// CONSUMED MEDIA DATABASE</p>
+          <h2>АРХИВ</h2>
+        </div>
+        <div class="archive-counter"><b id="archiveCount">0</b><span>завершено</span></div>
+      </div>
+
+      <div class="archive-toolbar">
+        <div class="tabs" role="tablist" aria-label="Тип контента">
+          <button class="tab active" data-type="all" type="button">ВСЁ</button>
+          <button class="tab" data-type="anime" type="button">АНИМЕ</button>
+          <button class="tab" data-type="series" type="button">СЕРИАЛЫ</button>
+          <button class="tab" data-type="movie" type="button">ФИЛЬМЫ</button>
+          <button class="tab" data-type="game" type="button">ИГРЫ</button>
+        </div>
+        <div class="toolbar-right">
+          <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Поиск по архиву..." autocomplete="off" /></label>
+          <select id="statusSelect" aria-label="Статус">
+            <option value="completed">Просмотрено / пройдено</option>
+            <option value="all">Все записи</option>
+            <option value="queue">В очереди</option>
+            <option value="planned">В планах</option>
+          </select>
+          <select id="sortSelect" aria-label="Сортировка">
+            <option value="source">Как в таблице</option>
+            <option value="score-desc">Оценка ↓</option>
+            <option value="score-asc">Оценка ↑</option>
+            <option value="title">По названию</option>
+          </select>
+          <button class="btn add-btn edit-only" id="addArchiveBtn" type="button">+ ДОБАВИТЬ</button>
+        </div>
+      </div>
+
+      <div id="archiveGrid" class="archive-grid"></div>
+      <div id="emptyState" class="empty-state hidden">
+        <b>NO DATA FOUND</b>
+        <span>По этим фильтрам записей нет.</span>
+      </div>
+    </section>
+
+    <section id="orders" class="section shell orders-section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">// REQUEST PROTOCOL</p>
+          <h2>ЗАКАЗЫ НА СТРИМ</h2>
+        </div>
+        <button class="btn edit-only" id="editRulesBtn" type="button">РЕДАКТИРОВАТЬ ПРАВИЛА</button>
+      </div>
+
+      <div class="orders-layout">
+        <aside class="orders-art" aria-hidden="true">
+          <img src="assets/orders-character.png" alt="">
+        </aside>
+        <div class="orders-content">
+          <article class="rules-panel">
+            <div class="panel-label"><span>01</span> ORDER_RULES.TXT</div>
+            <div id="rulesList" class="rules-list"></div>
+          </article>
+          <article class="queue-panel">
+            <div class="panel-label"><span>02</span> CURRENT_QUEUE.DAT</div>
+            <div class="queue-note">В очередь попадают только позиции с явно указанным заказчиком.</div>
+            <div id="queueList" class="queue-list"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="donors" class="section shell donors-section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">// HALL OF SUSPICIOUS GENEROSITY</p>
+          <h2>ДОСКА ЖЕРТВ МОЕЙ АФЕРЫ</h2>
+        </div>
+        <button class="btn edit-only" id="editDonorsBtn" type="button">РЕДАКТИРОВАТЬ ТОП</button>
+      </div>
+      <div id="donorBoard" class="donor-board"></div>
+    </section>
+
+    <section class="section shell security-section">
+      <div class="security-card">
+        <div>
+          <p class="kicker">// PUBLIC BUILD // PREPARED</p>
+          <h2>ГОТОВО К ПУБЛИКАЦИИ</h2>
+          <p>Подготовлена отдельная публичная статическая сборка без пользовательских аккаунтов и серверной базы. Редактор остаётся только в локальной версии.</p>
+        </div>
+        <div class="security-list">
+          <span>01 <b>Российский статический хостинг</b></span>
+          <span>02 <b>HTTPS + security headers</b></span>
+          <span>03 <b>Без backend / аккаунтов</b></span>
+          <span>04 <b>Отдельная PUBLIC-сборка</b></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Вернуться к шапке сайта" title="Наверх">
+    <span aria-hidden="true">↑</span><small>ВВЕРХ</small>
+  </button>
+
+  <footer class="footer shell">
+    <span>AMODEUUS // <span id="year"></span></span>
+    <span class="footer-links"><a href="privacy.html">КОНФИДЕНЦИАЛЬНОСТЬ</a><a href="contacts.html">КОНТАКТЫ</a></span>
+    <span>MADE FOR CHAOTIC BROADCASTING</span>
+  </footer>
+
+  <dialog id="detailDialog" class="detail-dialog">
+    <article class="detail-shell">
+      <button class="detail-close" id="detailClose" type="button" aria-label="Закрыть">×</button>
+      <div class="detail-poster" id="detailPoster"></div>
+      <div class="detail-copy">
+        <div class="detail-kicker" id="detailKicker">// ARCHIVE ENTRY</div>
+        <h3 id="detailTitle"></h3>
+        <div class="detail-meta" id="detailMeta"></div>
+        <div class="detail-rating" id="detailRating"></div>
+        <div class="detail-requester" id="detailRequester"></div>
+        <div class="detail-divider"></div>
+        <div class="detail-label">МОЁ МНЕНИЕ</div>
+        <div class="detail-opinion" id="detailOpinion"></div>
+        <button class="btn edit-only detail-edit" id="detailEditBtn" type="button">РЕДАКТИРОВАТЬ</button>
+      </div>
+    </article>
+  </dialog>
+
+  <dialog id="archiveDialog" class="dialog">
+    <form id="archiveForm" method="dialog">
+      <div class="dialog-head">
+        <div><p class="kicker">// ARCHIVE ENTRY</p><h3 id="dialogTitle">НОВАЯ ЗАПИСЬ</h3></div>
+        <button class="dialog-close" value="cancel" type="submit">×</button>
+      </div>
+      <input type="hidden" id="entryId" />
+      <div class="form-grid">
+        <label class="span-2">Название<input id="entryTitle" required maxlength="160" /></label>
+        <label>Тип<select id="entryType" required><option value="anime">Аниме</option><option value="series">Сериал</option><option value="movie">Фильм</option><option value="game">Игра</option></select></label>
+        <label>Статус<select id="entryStatus"><option value="watched">Завершено</option><option value="queue">В очереди</option><option value="planned">В планах</option></select></label>
+        <label>Оценка 1–10<input id="entryScore" type="number" min="1" max="10" step="0.1" placeholder="Можно оставить пустым" /></label>
+        <label>Год<input id="entryYear" type="text" maxlength="12" placeholder="2017" /></label>
+        <label class="span-2">Заказчик<input id="entryRequester" maxlength="80" placeholder="Пусто = Стример" /></label>
+        <label class="span-2">Локальное изображение<input id="entryImage" type="text" placeholder="assets/covers/имя.svg" /></label>
+        <label class="span-2">Моё мнение<textarea id="entryOpinion" rows="7" maxlength="4000" placeholder="Что понравилось, что бесило, кому бы посоветовал..."></textarea></label>
+      </div>
+      <div class="dialog-actions">
+        <button class="btn danger hidden" id="deleteEntryBtn" type="button">УДАЛИТЬ</button>
+        <span></span>
+        <button class="btn" value="cancel" type="submit">ОТМЕНА</button>
+        <button class="btn primary" id="saveEntryBtn" type="button">СОХРАНИТЬ</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="rulesDialog" class="dialog rules-dialog">
+    <form method="dialog">
+      <div class="dialog-head">
+        <div><p class="kicker">// ORDER RULES</p><h3>ПРАВИЛА ЗАКАЗОВ</h3></div>
+        <button class="dialog-close" value="cancel" type="submit">×</button>
+      </div>
+      <div class="rules-edit-grid">
+        <label>Для шейхов<textarea id="rulesVipEditor" rows="10"></textarea></label>
+        <label>Для нормисов<textarea id="rulesPointsEditor" rows="10"></textarea></label>
+      </div>
+      <div class="dialog-actions"><span></span><span></span><button class="btn" value="cancel" type="submit">ОТМЕНА</button><button class="btn primary" id="saveRulesBtn" type="button">СОХРАНИТЬ</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="donorDialog" class="dialog">
+    <form method="dialog">
+      <div class="dialog-head"><div><p class="kicker">// DONOR BOARD</p><h3>ТОП-5 ЗА ВСЁ ВРЕМЯ</h3></div><button class="dialog-close" value="cancel" type="submit">×</button></div>
+      <div id="donorInputs" class="donor-inputs"></div>
+      <div class="dialog-actions"><span></span><span></span><button class="btn" value="cancel" type="submit">ОТМЕНА</button><button class="btn primary" id="saveDonorsBtn" type="button">СОХРАНИТЬ</button></div>
+    </form>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

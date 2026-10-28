@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050507"/><stop offset=".55" stop-color="#141019"/><stop offset="1" stop-color="#030306"/></linearGradient>
+ <radialGradient id="g1"><stop stop-color="#ff325f" stop-opacity=".32"/><stop offset="1" stop-color="#ff325f" stop-opacity="0"/></radialGradient>
+ <radialGradient id="g2"><stop stop-color="#00f4ee" stop-opacity=".27"/><stop offset="1" stop-color="#00f4ee" stop-opacity="0"/></radialGradient>
+ <filter id="glitch"><feTurbulence type="fractalNoise" baseFrequency=".012 .15" numOctaves="1" seed="6" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+ <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity=".035"/></pattern>
+ <style>
+  .title{fill:#f8f7fb;font-family:'Arial Black','DejaVu Sans',sans-serif;font-size:48px;font-weight:900;text-anchor:middle;letter-spacing:-1px}
+  .label{fill:#ff325f;font-family:monospace;font-size:21px;font-weight:700;letter-spacing:4px;text-anchor:middle}
+  .year{fill:#fff;font-family:monospace;font-size:23px;text-anchor:middle;opacity:.82}
+  .meta{fill:#00f4ee;font-family:monospace;font-size:16px;text-anchor:middle;letter-spacing:1px;opacity:.9}
+  .thin{stroke:#fff;stroke-opacity:.11;stroke-width:2} .frame{fill:none;stroke:#ff325f;stroke-opacity:.28;stroke-width:3} .holes rect{fill:#00f4ee;opacity:.25}
+  .screen{fill:none;stroke:#00f4ee;stroke-opacity:.24;stroke-width:3} .spark{fill:#ff325f;opacity:.12;filter:url(#glitch)} .grid{stroke:#00f4ee;stroke-opacity:.08;stroke-width:1} .dpad{fill:#ff325f;opacity:.10}
+ </style>
+</defs>
+<rect width="600" height="900" rx="28" fill="url(#bg)"/>
+<circle cx="117" cy="222" r="167" fill="url(#g1)"/>
+<circle cx="305" cy="541" r="172" fill="url(#g2)"/>
+<g opacity=".78"><path d="M55 175h490v46H55z M55 704h490v46H55z" class="frame"/><g class="holes"><rect x="72" y="184" width="20" height="28" rx="2"/><rect x="122" y="184" width="20" height="28" rx="2"/><rect x="172" y="184" width="20" height="28" rx="2"/><rect x="222" y="184" width="20" height="28" rx="2"/><rect x="272" y="184" width="20" height="28" rx="2"/><rect x="322" y="184" width="20" height="28" rx="2"/><rect x="372" y="184" width="20" height="28" rx="2"/><rect x="422" y="184" width="20" height="28" rx="2"/><rect x="472" y="184" width="20" height="28" rx="2"/><rect x="522" y="184" width="20" height="28" rx="2"/><rect x="72" y="713" width="20" height="28" rx="2"/><rect x="122" y="713" width="20" height="28" rx="2"/><rect x="172" y="713" width="20" height="28" rx="2"/><rect x="222" y="713" width="20" height="28" rx="2"/><rect x="272" y="713" width="20" height="28" rx="2"/><rect x="322" y="713" width="20" height="28" rx="2"/><rect x="372" y="713" width="20" height="28" rx="2"/><rect x="422" y="713" width="20" height="28" rx="2"/><rect x="472" y="713" width="20" height="28" rx="2"/><rect x="522" y="713" width="20" height="28" rx="2"/></g></g>
+<path d="M38 88H562M38 812H562" stroke="#fff" stroke-opacity=".12"/>
+<text x="300" y="82" class="label">// ФИЛЬМ</text>
+<text x="300" y="470" class="title">Бойцовский клуб</text>
+<text x="300" y="798" class="year">1999</text>
+
+<rect width="600" height="900" fill="url(#scan)" opacity=".8"/>
+<path d="M0 328h600M0 334h600M0 622h600" stroke="#ff325f" stroke-opacity=".18" stroke-width="2"/>
+<path d="M25 31h105v3H25zM470 866h105v3H470z" fill="#00f4ee" opacity=".7"/>
+</svg>
