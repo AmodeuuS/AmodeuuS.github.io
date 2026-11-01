@@ -1230,7 +1230,7 @@ window.AMODEUUS_CONFIG = {
                     },
                     {
                         "id":  "entry-1793549762057",
-                        "title":  "Атлантида",
+                        "title":  "Атлантида : Затерянный мир",
                         "type":  "movie",
                         "status":  "watched",
                         "score":  9,

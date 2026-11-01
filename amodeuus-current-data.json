@@ -1,6 +1,6 @@
 {
     "schemaVersion":  1,
-    "updatedAt":  "2026-11-01T16:16:02.461Z",
+    "updatedAt":  "2026-11-01T16:20:00.531Z",
     "archive":  [
                     {
                         "id":  "movie-01",
@@ -1187,7 +1187,7 @@
                     },
                     {
                         "id":  "entry-1793549762057",
-                        "title":  "Атлантида",
+                        "title":  "Атлантида : Затерянный мир",
                         "type":  "movie",
                         "status":  "watched",
                         "score":  9,
