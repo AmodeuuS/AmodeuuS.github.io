@@ -1227,6 +1227,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1017,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1793549762057",
+                        "title":  "Атлантида",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  9,
+                        "ratingText":  "9/10",
+                        "year":  "01.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1793549762057.jpg",
+                        "opinion":  "Легендарный мульт из детства, всегда обожал истории про затерянные легенды и всё такое. Оч приятный и крутые персонажи. Местами сумбурно и будто бы не хватает 30 минут чтобы всё раскрыть. Жаль 2 часть говно.",
+                        "sourceOrder":  1018,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
