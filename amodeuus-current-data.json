@@ -1,6 +1,6 @@
 {
     "schemaVersion":  1,
-    "updatedAt":  "2026-11-01T16:20:00.531Z",
+    "updatedAt":  "2026-11-01T18:15:37.1064897Z",
     "archive":  [
                     {
                         "id":  "movie-01",
@@ -386,7 +386,7 @@
                         "score":  6.5,
                         "ratingText":  "6.5/10",
                         "opinion":  "Концепция прикольная, но для лично её немного не дожали в фильме. Хотелось больше моментов с 12ю часами и больше многоходовок вокруг этого. Ну и игру актёров с непривчки тяжело местами воспринимать, но это сугубо дело вкуса уже. Сама история с Ксаламеей прикольная, как некая параллель с событиями фильма сделано хорошо.",
-                        "requester":  "Mvidy",
+                        "requester":  "Mvedy",
                         "poster":  "assets/covers/movie-23.jpg",
                         "posterSource":  "https://sgs109.com/n/7855/0/",
                         "sourceOrder":  23,
@@ -896,7 +896,7 @@
                         "score":  7,
                         "ratingText":  "7/10",
                         "opinion":  "Прикольная история, есть странные моменты конечно, но послевкусию было приятный. Рисовка ещё была очень топовой, не пожалел что посмотрел",
-                        "requester":  "Mvidy",
+                        "requester":  "Mvedy",
                         "poster":  "assets/covers/anime-26.jpg",
                         "posterSource":  "https://www.popcorn.app/sg/ride-your-wave/movie/12932",
                         "sourceOrder":  226,
@@ -1218,7 +1218,7 @@
                        "amount":  8000
                    },
                    {
-                       "name":  "mvidy",
+                       "name":  "Mvedy",
                        "title":  "Генератор ох*ит*льных историй",
                        "amount":  1800
                    },

@@ -20,7 +20,7 @@ window.AMODEUUS_CONFIG = {
                        "amount":  8000
                    },
                    {
-                       "name":  "mvidy",
+                       "name":  "Mvedy",
                        "title":  "Генератор ох*ит*льных историй",
                        "amount":  1800
                    },
@@ -429,7 +429,7 @@ window.AMODEUUS_CONFIG = {
                         "score":  6.5,
                         "ratingText":  "6.5/10",
                         "opinion":  "Концепция прикольная, но для лично её немного не дожали в фильме. Хотелось больше моментов с 12ю часами и больше многоходовок вокруг этого. Ну и игру актёров с непривчки тяжело местами воспринимать, но это сугубо дело вкуса уже. Сама история с Ксаламеей прикольная, как некая параллель с событиями фильма сделано хорошо.",
-                        "requester":  "Mvidy",
+                        "requester":  "Mvedy",
                         "poster":  "assets/covers/movie-23.jpg",
                         "posterSource":  "https://sgs109.com/n/7855/0/",
                         "sourceOrder":  23,
@@ -939,7 +939,7 @@ window.AMODEUUS_CONFIG = {
                         "score":  7,
                         "ratingText":  "7/10",
                         "opinion":  "Прикольная история, есть странные моменты конечно, но послевкусию было приятный. Рисовка ещё была очень топовой, не пожалел что посмотрел",
-                        "requester":  "Mvidy",
+                        "requester":  "Mvedy",
                         "poster":  "assets/covers/anime-26.jpg",
                         "posterSource":  "https://www.popcorn.app/sg/ride-your-wave/movie/12932",
                         "sourceOrder":  226,
