@@ -1245,7 +1245,7 @@ window.AMODEUUS_CONFIG = {
                     },
                     {
                         "id":  "entry-1793732079849",
-                        "title":  "Мулап",
+                        "title":  "Мулан",
                         "type":  "movie",
                         "status":  "watched",
                         "score":  9.5,
