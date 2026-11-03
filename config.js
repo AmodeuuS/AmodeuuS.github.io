@@ -1242,6 +1242,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1018,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1793732079849",
+                        "title":  "Мулап",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  9.5,
+                        "ratingText":  "9.5/10",
+                        "year":  "03.11.2026",
+                        "requester":  "",
+                        "poster":  "",
+                        "opinion":  "Охуенный мультик, с весьма годными песнями и прикольным антагонистом. Ну, а мемы про мужицкую любовь - самое лучшее, чистый каеф.",
+                        "sourceOrder":  1019,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
