@@ -1252,7 +1252,7 @@ window.AMODEUUS_CONFIG = {
                         "ratingText":  "9.5/10",
                         "year":  "03.11.2026",
                         "requester":  "",
-                        "poster":  "",
+                        "poster":  "assets/covers/entry-1793732079849.jpg",
                         "opinion":  "Охуенный мультик, с весьма годными песнями и прикольным антагонистом. Ну, а мемы про мужицкую любовь - самое лучшее, чистый каеф.",
                         "sourceOrder":  1019,
                         "queueOrder":  null,
