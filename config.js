@@ -1257,6 +1257,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1019,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1793819962421",
+                        "title":  "Красавица и чудовище",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  8.5,
+                        "ratingText":  "8.5/10",
+                        "year":  "04.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1793819962421.jpg",
+                        "opinion":  "Оказалось что я вообще не помню мульт, прикольные песни и отлично исполненный хор и просто ужас насколько бесячий антагонист. Прям мерзость ебаная. А сам мульт полный каеф.",
+                        "sourceOrder":  1020,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
