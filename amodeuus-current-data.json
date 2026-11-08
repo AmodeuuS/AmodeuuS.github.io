@@ -1,6 +1,6 @@
 {
     "schemaVersion":  1,
-    "updatedAt":  "2026-11-08T17:50:32.468Z",
+    "updatedAt":  "2026-11-08T18:09:56.9954179Z",
     "archive":  [
                     {
                         "id":  "movie-01",
@@ -1202,7 +1202,7 @@
                     },
                     {
                         "id":  "entry-1793732079849",
-                        "title":  "Мулап",
+                        "title":  "Мулан",
                         "type":  "movie",
                         "status":  "watched",
                         "score":  9.5,
