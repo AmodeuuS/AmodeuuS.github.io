@@ -1287,6 +1287,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1021,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1794160232065",
+                        "title":  "Русалочка (1989)",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  5.5,
+                        "ratingText":  "5.5/10",
+                        "year":  "08.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1794160232065.jpg",
+                        "opinion":  "Песни ахуй, сам мульт ну наверное пока один из самых слабых у диснея. Ариэль глуповатая, как и её батя. Буквально история про то, как девахе 16 лет пытались найти парня, который услышал как ему намурчала девушка в дискорде и искал её исключительно по голосу, мораль сомнительная... А ну и да... АНДАДАСИИИИИ",
+                        "sourceOrder":  1022,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
