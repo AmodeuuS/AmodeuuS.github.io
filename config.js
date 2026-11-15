@@ -1317,6 +1317,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1023,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1794759190260",
+                        "title":  "Аладдин 1992",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  10,
+                        "ratingText":  "10/10",
+                        "year":  "15.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1794759190260.jpg",
+                        "opinion":  "Супер вайбовый мульт, с шикарными перепевами песен и персонажами. А голоса какие в дубляже, я аж потёк в моменте. Один из лучших мультов диснея.",
+                        "sourceOrder":  1024,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
