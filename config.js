@@ -1332,6 +1332,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1024,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1794759366187",
+                        "title":  "Белоснежка 1937 (Дроп)",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  3,
+                        "ratingText":  "3/10",
+                        "year":  "12.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1794759366187.jpg",
+                        "opinion":  "Я слишком стар для этого дерьма.. Мульт конечно классический, но слишком детский и рисовка ну прям оч состарилась уже, не тот вайб.",
+                        "sourceOrder":  1025,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
