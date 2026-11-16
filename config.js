@@ -1347,6 +1347,21 @@ window.AMODEUUS_CONFIG = {
                         "sourceOrder":  1025,
                         "queueOrder":  null,
                         "date":  ""
+                    },
+                    {
+                        "id":  "entry-1794855104017",
+                        "title":  "Дорога на Эльдорадо",
+                        "type":  "movie",
+                        "status":  "watched",
+                        "score":  10,
+                        "ratingText":  "10/10",
+                        "year":  "16.11.2026",
+                        "requester":  "",
+                        "poster":  "assets/covers/entry-1794855104017.jpg",
+                        "opinion":  "Шикарные песни, два очень прикольных и харизматичных ГГ, а также в целом приятный вайб у мульта. А ну и конечно 0+ секунд любой мужчина продержится когда увидит чела...",
+                        "sourceOrder":  1026,
+                        "queueOrder":  null,
+                        "date":  ""
                     }
                 ],
     "siteEmail":  "amodeuus.site@yandex.ru"
